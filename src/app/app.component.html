@@ -1,0 +1,13 @@
+<div class="row">
+<div class="col-md-6">
+     <input [(ngModel)]="filter" type="text" class="form-control" placeholder="Filtrar">
+</div>
+</div>
+<h2>Pokemones</h2>
+<ul class="heroes">
+  <li *ngFor="let pokemon of filteredList">
+    <span class="badge">{{pokemon.name}}</span>
+  </li>
+</ul>
+<div>
+</div>
